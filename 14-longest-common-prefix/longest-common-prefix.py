@@ -4,14 +4,11 @@ class Solution(object):
         :type strs: List[str]
         :rtype: str
         """
+        ans=""
         if not strs:
-            return ""
-        prefix=""
-        first_str =strs[0]
-        for i in range(len(first_str)):
-            for other_str in strs[1:]:
-                if i>=(len(other_str)) or other_str[i]!=first_str[i]:
-                    return prefix
-            prefix+=first_str[i]
-        return prefix
-        
+            return ans
+        for i in range(len(strs[0])):
+            for j in strs:
+                if i==len(j) or j[i]!=strs[0][i]:
+                    return strs[0][:i]
+        return strs[0]
