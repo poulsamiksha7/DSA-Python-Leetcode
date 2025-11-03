@@ -4,14 +4,6 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        count={}
-        for i in nums:
-            if i not in count:
-                count[i]=1
-            else:
-                return True
-        return False
-
+        return len(set(nums)) < len(nums)
+    
         
-
-            
