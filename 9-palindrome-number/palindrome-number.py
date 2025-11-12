@@ -11,6 +11,7 @@ class Solution(object):
             rev=rev*10+digit
             x=x//10
         if rev==original:
-             return True
+            return True
         else:
-                return False
+            return False
+            
