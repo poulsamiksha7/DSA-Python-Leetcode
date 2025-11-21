@@ -4,11 +4,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        
-        total=list()
-        c_sum=0
-        for i in range (len(nums)):
-            c_sum+=nums[i]
-            total.append(c_sum)
-        return total    
-        
+        sum=0
+        res=[]
+        n=len(nums)
+        for i in range(0,n):
+                sum+=nums[i]
+                res.append(sum)
+        return res
+    
