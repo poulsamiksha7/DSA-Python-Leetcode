@@ -4,9 +4,8 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        a=""
+        new=[]
         for i in s:
             if i.isalnum():
-                a+=i.lower()
-        return a==a[::-1]
-                
+                new.append(i.lower())
+        return new==new[::-1]
