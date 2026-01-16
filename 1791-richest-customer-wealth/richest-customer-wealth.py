@@ -13,5 +13,3 @@ class Solution(object):
                 wealth+=accounts[i][j]
             max_wealth=max(max_wealth,wealth)
         return max_wealth
-        
-        
