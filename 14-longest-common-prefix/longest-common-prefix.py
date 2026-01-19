@@ -12,3 +12,4 @@ class Solution(object):
                 if i==len(j) or j[i]!=strs[0][i]:
                     return strs[0][:i]
         return strs[0]
+        
