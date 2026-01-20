@@ -10,6 +10,3 @@ class Solution(object):
             count[i]=count.get(i,0)+1
             if count[i]>n//2:
                 return i
-                  
-            
-     
